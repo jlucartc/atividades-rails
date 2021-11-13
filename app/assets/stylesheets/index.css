@@ -1,0 +1,74 @@
+body {
+	background-color: #121124;
+}
+
+#lista-vazia {
+	color: #229922;
+	font-family: monospace;
+}
+
+#titulo {
+	color: #99bbcc;
+	font-family: monospace;
+}
+
+#lista-atividades {
+}
+
+#atividade {
+	margin: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 16px;
+	color: #eeeeee;
+	font-family: monospace;
+	text-decoration: none;
+}
+
+#subatividades {
+	margin: 15px;
+	font-family: monospace;
+	text-decoration: none;
+}
+
+#item-subatividade {
+	font-family: monospace;
+	text-decoration: none;
+}
+
+#status-subatividade-completa {
+	background-color: #444499;
+}
+
+#status-subatividade-incompleta {
+	background-color: #994444;
+	text-decoration: none;
+}
+
+#botao-nova-subatividade {
+	padding: 8px;
+	color: #00ffaa;
+	border-radius: 5px;
+	background-color: #990055;
+	font-family: monospace;
+	text-decoration: none;
+}
+
+#botao-completar-atividade {
+	padding: 8px;
+	color: #99ffaa;
+	border-radius: 5px;
+	background-color: #3300cc;
+	font-family: monospace;
+	text-decoration: none;
+}
+
+#botao-nova-atividade {
+	color: #00ffaa;
+	font-size: 16px;
+	background-color: #990055;
+	padding: 8px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-family: monospace;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= csrf_meta_tags %>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/formulario_nova_atividade.css">
+	<title></title>
+</head>
+<body>
+	<form method="POST" action="/criar_atividade">
+		<label>Nome: </label><input type="text" name="nome"><br><br>
+		<button id="botao-criar-atividade" type="submit">Criar</button>
+		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	</form>
+</body>
+</html>

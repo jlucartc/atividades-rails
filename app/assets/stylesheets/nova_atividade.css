@@ -1,0 +1,19 @@
+body {
+	background-color: #121124;
+}
+
+label {
+	color: #99bbcc;
+	font-size: 16px;
+	font-family: monospace;
+}
+
+#botao-criar-atividade {
+	color: #00ffaa;
+	font-size: 16px;
+	background-color: #990055;
+	padding: 8px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-family: monospace;
+}

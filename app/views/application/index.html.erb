@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<%= stylesheet_link_tag "index"%>
+	<title></title>
+</head>
+<body>
+<h1 id="titulo">Lista de Atividades</h1>
+<% if !@atividades.empty? %>
+	<ul id="lista-atividades">
+		<% @atividades.each do |atividade| %>
+			<li id="atividade"><%= atividade.nome %> - <a id="botao-nova-subatividade" href="<%= nova_subatividade_path(atividade.id) %>">Nova subatividade</a> - <a id="botao-completar-atividade" href="<%= completar_atividade_path(atividade.id) %>">Completar</a>
+				<ul id="subatividades">
+					<% atividade.subatividades.each do |subatividade|%>
+						<% if subatividade.esta_completa %>
+							<li id="item-subatividade"><%= subatividade.nome %> - <a id="status-subatividade-completa" href="<%= iniciar_subatividade_path(subatividade.id) %>">Completa</a></li>
+						<% else %>
+							<li id="item-subatividade"><%= subatividade.nome %> - <a id="status-subatividade-incompleta" href="<%= completar_subatividade_path(subatividade.id) %>">Incompleta</a></li>
+						<% end %>
+					<% end %>
+				</ul>
+			</li>
+		<% end %>
+	</ul>
+<% else %>
+	<h2 id="lista-vazia">Não há atividades :)</h2>
+<% end %>
+<a id="botao-nova-atividade" href="<%= nova_atividade_path %>">Nova atividade</a>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= csrf_meta_tags %>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/formulario_nova_subatividade.css">
+	<title></title>
+</head>
+<body>
+	<form method="POST" action="/criar_subatividade">
+		<label>Nome: </label><input type="text" name="nome"><br><br>
+		<input type="hidden" name="atividade" value="<%= @atividade.id %>">
+		<button id="botao-criar-subatividade" type="submit">Criar</button>
+		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	</form>
+</body>
+</html>
