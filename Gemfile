@@ -28,6 +28,7 @@ gem 'capistrano-rails', '~> 1.6', require: false
 gem 'capistrano-bundler', '>= 1.1.0', require: false
 gem 'capistrano3-puma', require: false
 gem 'passenger'
+gem 'listen', '~> 3.3'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -46,7 +47,6 @@ group :development do
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
-  gem 'listen'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
