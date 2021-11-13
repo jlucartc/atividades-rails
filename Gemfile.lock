@@ -245,7 +245,7 @@ DEPENDENCIES
   capistrano3-puma
   capybara (>= 3.26)
   jbuilder (~> 2.7)
-  listen (~> 3.3)
+  listen
   passenger
   pry
   puma (~> 5.0)
